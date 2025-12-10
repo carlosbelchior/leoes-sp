@@ -72,14 +72,21 @@ body {
 }
 
 .member-card {
-    height: 500px;
+    height: 300px;
     width: 100%;
     border-radius: 18px;
     display: inline-block;
     min-height: 1em;
     vertical-align: middle;
     background-color: currentcolor;
-    opacity: .5;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+
+.member-card img {
+    height: 300px;
+    width: 100%;
+    border-radius: 18px;
 }
 
 .video-box {
@@ -90,6 +97,10 @@ body {
     vertical-align: middle;
     background-color: currentcolor;
     opacity: .5;
+}
+
+.table {
+    --bs-table-bg: transparent;
 }
 
 .store-box {
