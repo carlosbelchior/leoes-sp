@@ -1,0 +1,32 @@
+@media (max-width: 576px) {
+    .hero {
+        height: 160px
+    }
+
+    .big-card {
+        height: 220px
+    }
+
+    .side-card {
+        height: 220px
+    }
+
+    .member-card {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .video-box {
+        height: 140px
+    }
+
+    .logo {
+        width: 56px;
+        height: 56px
+    }
+
+    .logo img{
+        width: 56px;
+        height: 56px;
+    }
+}
