@@ -32,6 +32,11 @@ body {
     height: 80px;
 }
 
+.socio-links a {
+    color: white;
+    text-decoration: none;
+}
+
 .text-white {
     color: white;
 }
