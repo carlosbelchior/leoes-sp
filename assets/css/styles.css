@@ -41,13 +41,19 @@ body {
 }
 
 .hero {
-    height: 260px;
-    border-radius: 18px;
     display: inline-block;
     min-height: 1em;
     vertical-align: middle;
-    background-color: currentcolor;
-    opacity: .5;
+    width: 100%;
+    min-height: 260px;
+}
+
+.hero .carousel-inner .carousel-item img {
+    border-radius: 18px;
+}
+
+.hero img {
+    border-radius: 18px;
 }
 
 .big-card {
@@ -57,7 +63,14 @@ body {
     min-height: 1em;
     vertical-align: middle;
     background-color: currentcolor;
-    opacity: .5;
+}
+
+.table-g4 {
+    color: green;
+}
+
+.table-g6 {
+    color: greenyellow;
 }
 
 .side-card {
@@ -68,35 +81,34 @@ body {
     min-height: 1em;
     vertical-align: middle;
     background-color: currentcolor;
-    opacity: .5;
 }
 
 .member-card {
-    height: 300px;
+    height: auto;
     width: 100%;
     border-radius: 18px;
     display: inline-block;
-    min-height: 1em;
+    min-height: 1.5em;
     vertical-align: middle;
-    background-color: currentcolor;
-    opacity: .8;
     margin-bottom: 20px;
 }
 
 .member-card img {
-    height: 300px;
+    height: 100%;
     width: 100%;
     border-radius: 18px;
 }
 
-.video-box {
+.img-box {
     height: 180px;
-    border-radius: 18px;
     display: inline-block;
     min-height: 1em;
     vertical-align: middle;
-    background-color: currentcolor;
-    opacity: .5;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 18px;
 }
 
 .table {
@@ -111,12 +123,6 @@ body {
     vertical-align: middle;
     background-color: currentcolor;
     opacity: .5;
-}
-
-.hero {
-    width: 100%;
-    min-height: 360px;
-    background: #fff;
 }
 
 .big-card {

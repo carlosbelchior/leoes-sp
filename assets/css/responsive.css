@@ -1,3 +1,10 @@
+@media (max-width: 1920px) {
+    .bg-menu {
+        background: url("../images/bg-menu.png") center center no-repeat;
+        background-size: auto 750%;
+    }
+}
+
 @media (max-width: 576px) {
     .bg-menu {
         background: url("../images/bg-menu.png") center center no-repeat;
