@@ -100,9 +100,9 @@ body {
 }
 
 .img-box {
-    height: 180px;
+    height: auto;
     display: inline-block;
-    min-height: 1em;
+    min-height: 180px;
     vertical-align: middle;
 }
 
@@ -127,6 +127,13 @@ body {
 
 .big-card {
     width: 100%;
+}
+
+.maps iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    min-height: 440px;
 }
 
 /* small tweaks to match Figma look */
