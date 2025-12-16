@@ -1,11 +1,15 @@
 :root {
     --navy-1: #07173a;
     --navy-2: #0f2b5a;
-    --card: #e7e7e7
+    --card: #e7e7e7;
+    --input-bg: rgba(0, 0, 0, 0.22);
+    --input-bg-focus: rgba(0, 0, 0, 0.32);
+    --input-border: rgba(255, 255, 255, 0.22);
+    --input-border-focus: rgba(220, 53, 69, 0.75);
 }
 
 body {
-    font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+    font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background: linear-gradient(180deg, var(--navy-1), var(--navy-2));
     color: #e7e7e7
 }
@@ -47,41 +51,40 @@ body {
 
 .hero {
     display: inline-block;
-    min-height: 1em;
     vertical-align: middle;
     width: 100%;
     min-height: 260px;
 }
 
 .hero .carousel-inner .carousel-item img {
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 .hero img {
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 .big-card {
     height: 320px;
-    border-radius: 18px;
+    border-radius: 10px;
     display: inline-block;
     min-height: 1em;
     vertical-align: middle;
     background-color: currentcolor;
 }
 
-.table-g4 {
-    color: green;
+.table-line {
+    line-height: 22px;
 }
 
-.table-g6 {
-    color: greenyellow;
+.resize-none {
+    resize: none;
 }
 
 .side-card {
     height: 320px;
     width: 100%;
-    border-radius: 18px;
+    border-radius: 10px;
     display: inline-block;
     min-height: 1em;
     vertical-align: middle;
@@ -91,7 +94,7 @@ body {
 .member-card {
     height: auto;
     width: 100%;
-    border-radius: 18px;
+    border-radius: 10px;
     display: inline-block;
     min-height: 1.5em;
     vertical-align: middle;
@@ -101,7 +104,7 @@ body {
 .member-card img {
     height: 100%;
     width: 100%;
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 .img-box {
@@ -113,7 +116,7 @@ body {
 
 .img-box img {
     width: 100%;
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 .table {
@@ -121,24 +124,31 @@ body {
 }
 
 .store-box {
-    height: 140px;
-    border-radius: 18px;
+    width: 100%;
     display: inline-block;
-    min-height: 1em;
     vertical-align: middle;
-    background-color: currentcolor;
-    opacity: .5;
+}
+
+.store-box img {
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .big-card {
     width: 100%;
 }
 
+.maps {
+    width: 100%;
+}
+
 .maps iframe {
     width: 100%;
     height: auto;
-    border-radius: 18px;
-    min-height: 440px;
+    border-radius: 10px;
+    min-height: 200px;
 }
 
 /* small tweaks to match Figma look */
@@ -150,3 +160,46 @@ footer small {
     color: #c9d0da
 }
 
+.contact-card {
+    background-color: var(--navy-1);
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.form-control-leoes {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: #fff;
+    border-radius: 10px;
+    padding:  0.65rem;
+    box-shadow: none;
+}
+
+/* Esconde o placeholder (mantém só o label "dentro") sem quebrar o floating label */
+.form-control-leoes::placeholder {
+    color: #fff;
+}
+
+.form-control-leoes:focus {
+    background: var(--input-bg-focus);
+    border-color: var(--input-border-focus);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+    color: #fff;
+}
+
+/* Floating label */
+.form-floating > label {
+    color: rgba(255, 255, 255, 0.78);
+    padding-left: 0.95rem;
+}
+
+.form-floating > .form-control-leoes:focus ~ label,
+.form-floating > .form-control-leoes:not(:placeholder-shown) ~ label {
+    color: rgba(255, 255, 255, 0.90);
+}
+
+/* Ajuste específico do textarea com floating label */
+.form-floating > textarea.form-control-leoes {
+    padding-top: 1.6rem;
+    padding-bottom: 0.8rem;
+}

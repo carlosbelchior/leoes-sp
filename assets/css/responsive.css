@@ -20,7 +20,7 @@
     }
 
     .side-card {
-        height: 220px
+        height: 320px
     }
 
     .member-card {
@@ -40,5 +40,9 @@
     .logo img{
         width: 56px;
         height: 56px;
+    }
+
+    .table-line {
+        line-height: 22px;
     }
 }
