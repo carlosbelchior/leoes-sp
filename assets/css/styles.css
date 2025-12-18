@@ -218,3 +218,9 @@ footer small {
     padding-top: 1.6rem;
     padding-bottom: 0.8rem;
 }
+
+footer a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}

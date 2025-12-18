@@ -6,17 +6,35 @@
 }
 
 @media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
     .bg-menu {
         background: url("../images/bg-menu.png") center center no-repeat;
         background-size: auto 300%;
     }
 
     .hero {
-        height: 160px
+        min-height: auto;
+        height: 160px;
     }
 
     .big-card {
-        height: 220px
+        height: auto;
+        border-radius: 10px;
+        display: inline-block;
+        min-height: 1em;
+        vertical-align: middle;
+        background-color: currentcolor;
+    }
+
+    .big-card img {
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 
     .side-card {
@@ -24,8 +42,12 @@
     }
 
     .member-card {
-        height: 300px;
+        height: auto;
         margin-bottom: 20px;
+    }
+
+    .member-card img {
+        width: 100%;
     }
 
     .video-box {
@@ -44,5 +66,11 @@
 
     .table-line {
         line-height: 22px;
+    }
+
+    footer a {
+        margin: 20px;
+        color: white;
+        text-decoration: none;
     }
 }
