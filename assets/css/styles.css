@@ -81,6 +81,13 @@ a.nav-link {
     background-color: currentcolor;
 }
 
+.big-card img {
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    height: 320px;
+}
+
 .table-line {
     line-height: 22px;
 }
